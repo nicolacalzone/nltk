@@ -581,7 +581,7 @@ if __name__ == "__main__":
     sample_grammar = """
     S  -> NP{1} VP{2}                // NP{1} VP{2}
     NP -> A{1} N{2}                  // A{1} N{2}
-    NP -> N{1}                       // N{1}
+    NP -> N{1} A{2}                  // A{2} N{1} 
     VP -> V{1} NP{2}                 // NP{2} V{1}
     VP -> V{1} ADV{2} NP{3}          // ADV{2} NP{3} V{1}
 
